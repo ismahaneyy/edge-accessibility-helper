@@ -106,16 +106,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Function to summarize text using Azure Text Analytics API
+
     async function summarizeText(text) {
         // Simulate API call delay for testing
         await new Promise(resolve => setTimeout(resolve, 1000));
         
-        // TODO: Replace this placeholder with actual Azure Text Analytics API call
-        // Azure Text Analytics endpoint: https://YOUR_RESOURCE_NAME.cognitiveservices.azure.com/text/analytics/v3.2-preview.1/summarization
-        
-        // Placeholder implementation - create a better summary
-        // Check if text already starts with "Summary:" to avoid duplication
+
         const cleanText = text.startsWith('Summary: ') ? text.substring(9) : text;
         
         // Create an intelligent summary for any type of text
@@ -194,45 +190,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return `Summary: ${summary}`;
         
-        /* 
-        // ACTUAL AZURE TEXT ANALYTICS IMPLEMENTATION:
-        // Replace YOUR_AZURE_ENDPOINT with your actual Azure endpoint
-        // Replace YOUR_API_KEY with your actual Azure API key
-        
-        const azureEndpoint = 'https://YOUR_RESOURCE_NAME.cognitiveservices.azure.com/text/analytics/v3.2-preview.1/summarization';
-        const apiKey = 'YOUR_API_KEY';
-        
-        try {
-            const response = await fetch(azureEndpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Ocp-Apim-Subscription-Key': apiKey
-                },
-                body: JSON.stringify({
-                    documents: [{
-                        id: '1',
-                        text: text,
-                        language: 'en'
-                    }]
-                })
-            });
-            
-            if (!response.ok) {
-                throw new Error(`Azure API error: ${response.status} - ${response.statusText}`);
-            }
-            
-            const data = await response.json();
-            return data.documents[0].summaries[0].text;
-            
-        } catch (error) {
-            console.error('Azure Text Analytics API error:', error);
-            throw new Error(`Failed to summarize text: ${error.message}`);
-        }
-        */
+
     }
 
-    // Function to get speech using Web Speech API (free, built into browser)
+    // Function to get speech using Web Speech API 
     async function getSpeechFromWebAPI(text) {
         // Simulate API call delay for testing
         await new Promise(resolve => setTimeout(resolve, 1000));
