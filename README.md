@@ -77,10 +77,8 @@ This is open source under the [MIT License](LICENSE).
 
 ## Support
 
-If something's not working or you have ideas to make it better:
-1. Check the [Issues](https://github.com/yourusername/text-assistant-extension/issues) page
-2. Create a new issue and tell me what's wrong
-3. Let me know what browser you're using
+
+If something's not working or you have ideas to make it better, just let me know!
 
 ## Future ideas
 
