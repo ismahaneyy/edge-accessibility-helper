@@ -10,6 +10,9 @@ A Chrome/Edge extension I built to help with reading and understanding text on w
 - **Works everywhere**: Any website, any type of content
 - **Simple to use**: Clean popup with just a few buttons
 
+![Extension Popup](TextAssistantScreenshot.jpg)
+
+
 ## Installation
 
 ### Method 1: Load Unpacked (Developer Mode)
