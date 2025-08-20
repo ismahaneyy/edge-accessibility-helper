@@ -83,26 +83,26 @@ The extension looks at your text and picks out the most important sentences. It 
 
 ## Project Structure
 
+```
 edge-accessibility-helper-main/
-├── manifest.json # Chrome/Edge manifest (V3)
-├── manifest.firefox.json # Firefox manifest (V2)
-├── popup.js # Main extension logic
-├── popup.html # Extension popup interface
-├── popup.css # Extension styling
-├── content.js # Content script for text selection
-├── background.js # Background service worker
-├── icons/ # Multi-size icon set
-│ ├── icon-16.png # 16x16 pixels
-│ ├── icon-32.png # 32x32 pixels
-│ ├── icon-48.png # 48x48 pixels
-│ └── icon-128.png # 128x128 pixels
-├── build/ # Build output directory
-├── dist/ # Distribution packages
-│ ├── edge-accessibility-helper.zip # Chrome/Edge package
-│ └── edge-accessibility-helper-firefox.zip # Firefox package
-└── README.md # This file
-
-
+├── manifest.json              # Chrome/Edge manifest (V3)
+├── manifest.firefox.json      # Firefox manifest (V2)
+├── popup.js                   # Main extension logic
+├── popup.html                 # Extension popup interface
+├── popup.css                  # Extension styling
+├── content.js                 # Content script for text selection
+├── background.js              # Background service worker
+├── icons/                     # Multi-size icon set
+│   ├── icon-16.png           # 16x16 pixels
+│   ├── icon-32.png           # 32x32 pixels
+│   ├── icon-48.png           # 48x48 pixels
+│   └── icon-128.png          # 128x128 pixels
+├── build/                     # Build output directory
+├── dist/                      # Distribution packages
+│   ├── edge-accessibility-helper.zip          # Chrome/Edge package
+│   └── edge-accessibility-helper-firefox.zip  # Firefox package
+└── README.md                  # This file
+```
 
 ## Why Multiple Manifests?
 
