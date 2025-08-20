@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Assistant</h1>
+        
+        <div class="textarea-container">
+            <label for="selectedText">Selected Text:</label>
+            <textarea id="selectedText" placeholder="Selected text will appear here..."></textarea>
+        </div>
+        
+        <div class="button-container">
+            <button id="summarizeBtn" class="btn btn-primary">Summarize</button>
+            <button id="listenBtn" class="btn btn-secondary">Listen</button>
+        </div>
+        
+        <div class="audio-container">
+            <label for="audioPlayer">Audio Player:</label>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <div id="status" class="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
